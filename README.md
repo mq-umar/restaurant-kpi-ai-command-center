@@ -60,6 +60,4 @@ flowchart LR
   KPI --> TonyOS["TonyOS AI Mission Control"]
 ```
 
-## Resume Bullet
 
-Built a multi-location restaurant KPI dashboard with POS export ingestion, labor API integration, Google Sheets financial inputs, Vercel backend routes, automated QA checks, and an internal AI operations command center for data health, sync monitoring, and executive reporting.
