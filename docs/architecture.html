@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Architecture | Portfolio Demo</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <h1>Architecture</h1>
+          <p class="subtitle">Resume-safe overview of the production design.</p>
+        </div>
+        <span class="badge good">No Real Data</span>
+      </header>
+      <nav class="nav">
+        <a href="/">Executive</a>
+        <a href="/ai-ops.html">AI Mission Control</a>
+        <a class="active" href="/docs/architecture.html">Architecture</a>
+      </nav>
+      <section class="table-card">
+        <h2>Source Mapping</h2>
+        <table>
+          <thead><tr><th>Domain</th><th>Source</th><th>Guardrail</th></tr></thead>
+          <tbody>
+            <tr><td>Sales</td><td>Toast exports/API</td><td>Use latest completed export date only.</td></tr>
+            <tr><td>Labor</td><td>7shifts actual labor</td><td>Never fall back to guessed labor cost.</td></tr>
+            <tr><td>Food Cost</td><td>Weekly finance sheet</td><td>Only use rows matching the selected reporting period.</td></tr>
+            <tr><td>Prime Cost</td><td>Sales + Labor + Food Cost</td><td>Show TBD when periods or sources do not match.</td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="grid two">
+        <div class="card">
+          <div class="label">Backend Pattern</div>
+          <div class="note">API credentials stay server-side in Vercel functions. Frontend pages read normalized dashboard JSON and safe status endpoints.</div>
+        </div>
+        <div class="card">
+          <div class="label">AI Ops Pattern</div>
+          <div class="note">Supervised QA agents validate sheets, snapshots, labor sync, and KPI readiness. First version does not edit source systems.</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

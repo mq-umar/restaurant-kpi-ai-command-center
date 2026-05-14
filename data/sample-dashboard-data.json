@@ -1,0 +1,52 @@
+{
+  "generatedAt": "2026-05-14T10:30:00-04:00",
+  "latestExportDate": "2026-05-13",
+  "period": {
+    "label": "This Week So Far",
+    "startDate": "2026-05-11",
+    "endDate": "2026-05-13",
+    "note": "Synthetic demo data. Toast-style exports reflect the latest completed export date."
+  },
+  "company": {
+    "netSales": 98240,
+    "discounts": 2750,
+    "orders": 3124,
+    "aov": 31.45,
+    "thirdPartySales": 22890,
+    "thirdPartyPercent": 23.3,
+    "cateringSales": 9050,
+    "cateringPercent": 9.2,
+    "laborCost": 21340,
+    "laborHours": 1048.5,
+    "laborPercent": 21.7,
+    "primeCostStatus": "TBD",
+    "primeCostNote": "Food cost is weekly and must match the selected completed period."
+  },
+  "locations": [
+    { "name": "Demo Location A", "netSales": 31240, "orders": 982, "aov": 31.81, "thirdPartyPercent": 19.8, "cateringPercent": 8.4, "laborPercent": 21.2 },
+    { "name": "Demo Location B", "netSales": 28750, "orders": 930, "aov": 30.91, "thirdPartyPercent": 25.1, "cateringPercent": 10.9, "laborPercent": 22.4 },
+    { "name": "Demo Location C", "netSales": 22480, "orders": 752, "aov": 29.89, "thirdPartyPercent": 21.5, "cateringPercent": 6.3, "laborPercent": 20.6 },
+    { "name": "Demo Location D", "netSales": 15770, "orders": 460, "aov": 34.28, "thirdPartyPercent": 29.2, "cateringPercent": 14.1, "laborPercent": 23.0 }
+  ],
+  "combos": [
+    { "label": "Combo 1", "sold": 149, "value": 1791 },
+    { "label": "Combo 2", "sold": 640, "value": 11056 },
+    { "label": "Combo 3", "sold": 783, "value": 16923 },
+    { "label": "Combo 12", "sold": 50, "value": 3400 }
+  ],
+  "aiOps": {
+    "health": "Healthy",
+    "primeCost": "Ready",
+    "agents": [
+      { "name": "Dashboard QA Agent", "status": "Online", "message": "Validated synthetic source snapshots." },
+      { "name": "7shifts Sync Agent", "status": "Online", "message": "Labor data normalized from sample API response." },
+      { "name": "Toast Sync Agent", "status": "Online", "message": "Latest export is fresh." },
+      { "name": "Food Cost Validation Agent", "status": "Warning", "message": "Prime cost remains TBD until weekly food cost is present." }
+    ],
+    "logs": [
+      { "time": "10:30 AM", "agent": "Dashboard QA Agent", "severity": "Info", "message": "Synthetic QA completed." },
+      { "time": "10:31 AM", "agent": "7shifts Sync Agent", "severity": "Info", "message": "Labor sync completed." },
+      { "time": "10:32 AM", "agent": "Food Cost Validation Agent", "severity": "Warning", "message": "Food cost requires matching weekly source row." }
+    ]
+  }
+}
