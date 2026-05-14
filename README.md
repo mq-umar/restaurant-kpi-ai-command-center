@@ -1,6 +1,6 @@
 # Restaurant KPI & AI Operations Command Center
 
-Resume-safe public version of a multi-location restaurant KPI dashboard and AI operations monitor.
+Skeleton public version of a multi-location restaurant KPI dashboard and AI operations monitor.
 
 All data in this repository is synthetic. The production project uses private Toast exports, 7shifts labor data, and Google Sheets finance inputs, but those source files, IDs, credentials, and operational numbers are intentionally excluded here.
 
