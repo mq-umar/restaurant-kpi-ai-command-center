@@ -36,16 +36,6 @@ Then open:
 http://localhost:8080
 ```
 
-## Public Safety
-
-Before making a repo public, run:
-
-```sh
-scripts/check_public_safety.sh
-```
-
-The checker looks for common secret patterns and accidental private data folders.
-
 ## Production Architecture
 
 ```mermaid
